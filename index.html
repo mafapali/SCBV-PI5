@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brigada Popular - Chamados</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <!-- Importa a biblioteca do Supabase -->
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+</head>
+<body>
+    <header>
+        <h1>Brigada Popular - Chamados</h1>
+    </header>
+
+    <main class="container">
+        <!-- Seção do Formulário -->
+        <section class="card">
+            <h2>Abrir Novo Chamado</h2>
+            <form id="form-chamado">
+                <label for="titulo">Título / Resumo do Problema *</label>
+                <input type="text" id="titulo" required placeholder="Ex: Vazamento de água na rua">
+
+                <label for="descricao">Descrição Detalhada *</label>
+                <textarea id="descricao" required placeholder="Explique o que está acontecendo..."></textarea>
+
+                <label for="local">Local / Endereço *</label>
+                <input type="text" id="local" required placeholder="Rua, número, ponto de referência">
+
+                <label for="contato">Contato (Opcional)</label>
+                <input type="text" id="contato" placeholder="Telefone ou e-mail">
+
+                <button type="submit">Enviar Chamado</button>
+            </form>
+        </section>
+
+        <!-- Seção do Mural de Chamados -->
+        <section class="card">
+            <h2>Mural de Chamados</h2>
+            <div id="lista-chamados">
+                <p>Carregando chamados...</p>
+            </div>
+        </section>
+    </main>
+
+    <script src="app.js"></script>
+</body>
+</html>
