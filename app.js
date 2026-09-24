@@ -1,5 +1,6 @@
 // === COLOQUE SUAS CHAVES DO SUPABASE AQUI ===
-const SUPABASE_URL = 'zfpstoevqfnrarmwddub';
+const SUPABASE_URL = 'https://zfpstoevqfnrarmwddub.supabase.co/rest/v1/';
+const SUPABASE_ANON_KEY = 'sb_publishable_bZ5SgALOO-LwT3WOlHrlrw_-UHGuobG';
 
 // Inicializa o Supabase
 const supabaseClient = supabase.createClient(SUPABASE_URL, SUPABASE_ANON_KEY);
